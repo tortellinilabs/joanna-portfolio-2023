@@ -21,7 +21,8 @@
     "watch:storybook": "npx tailwindcss -i ./src/App.css -o ./public/output.css --watch",
     "build:storybook": "npx tailwindcss -i ./src/App.css -o ./public/output.css",
     "storybook": "watch:storybook & storybook dev -p 6006",
-    "build-storybook": "build:storybook && storybook build"
+    "build-storybook": "build:storybook && storybook build",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +60,13 @@
     "prop-types": "^15.8.1",
     "storybook": "^7.4.4",
     "tailwindcss": "^3.3.3",
-    "webpack": "^5.88.2"
+    "webpack": "^5.88.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.3"
+  },
+  "lint-staged": {
+    "*.{html,js,jsx}": "prettier --write"
   }
 }
