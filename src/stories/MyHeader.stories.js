@@ -1,11 +1,11 @@
-import Header from '../components/Header.jsx';
+import Header from "../components/Header.jsx";
 
 export default {
-  title: 'Example/MyHeader',
+  title: "Example/MyHeader",
   component: Header,
 
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
 };
 
